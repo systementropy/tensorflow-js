@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./bootstrap.min.css">
+	<title>ML</title>
+</head>
+<body>
+	<main>
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-6">
+					<input type="file" id="image_select" class="form-control border-0">
+				</div>
+				<div class="col-6">
+					<button id="predict_button" class="btn btn-dark float-right" >Predict</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<h2 class="ml-3">Predictions</h2>
+					<ol id="prediction_list"></ol>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-12">
+					<h2 class="ml-3">Image</h2>
+					<img src="" alt="" id="selected_image" class="ml-3">
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="./jquery.js"></script>
+	<script src="./tf.min.js"></script>
+	<script src="./imagenet_classes.js"></script>
+	<script src="./predict.js"></script>
+</body>
+</html>
